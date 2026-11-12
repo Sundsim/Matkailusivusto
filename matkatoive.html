@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Matkatoive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="./index.html" class="nav-button" >Etusivu</a>
+        <a href="./matkainfo.html" class="nav-button" >Matkainfo</a>
+        <a href="./matkatoive.html" class="nav-button" >Matkatoive</a>
+    </nav>
+
+<form>
+    <label for="sahkoposti">Sähköposti:</label><br>
+    <input type="text" id="sahkoposti" sposti="sahkoposti" required><br>
+    <label for="kohde">Lomakohde:
+        <select required>
+        <option value="" >Valitse yksi</option>
+        <option value="1" >Matka A</option>
+        <option value="2" >Matka B</option>
+        <option value="3" >Matka C</option>
+        </select> 
+    </label><br>
+    <label for="lahto">Lähtöpäivä:</label><br>
+    <input type="date" id="lahto" lahtopaiva="lahto" required><br>
+    <label for="maara">Matkustajien määrä:</label><br>
+    <input type="number" id="maara" matkustajienmaara="maara" min="1" max="8" required><br>
+    <input type="submit" value="Lähetä matkatoive">
+</form>
+<footer>
+    makoisat.matkat@yritys.fi - 555-not-a-real-number
+</footer>
+
+
+
+
+</body>
+
+</html>

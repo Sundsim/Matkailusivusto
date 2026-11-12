@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+}
+:root{
+    --primary: royalblue;
+    --dark: darkblue; 
+    --light: lightblue;
+    --tausta: #D3D3D3;
+    --teksti: black; 
+}
+body{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Georgia, Times, sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti);
+    text-align: center;
+}
+
+nav{
+    background-color: var(--dark);
+    padding: 1rem;
+    gap: 3rem;
+    display: flex;
+    justify-content: left;
+    position:sticky;
+}
+
+.nav-button {
+    display: flex;
+    background:var(--primary);
+    color: var(--teksti);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-top: 0.1rem;
+}
+.nav-button:hover{
+    background-color: var(--light);
+}
+
+header{
+    background: var(--tausta);
+    font-family: 'Times New Roman', Georgia, Times, sans-serif;
+}
+
+form{
+    background-color: lightblue;
+    color:darkblue
+    padding 1rem;
+}  
+footer{
+    background-color: var(--light);
+    bottom: 0;
+    text-align: center;
+}
